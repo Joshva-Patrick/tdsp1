@@ -16,8 +16,8 @@ client = OpenAI(
     base_url="https://api.x.ai/v1"
 )
 
-# Supported Grok models: "grok-2-latest", "grok-3", or "grok-3-mini"
-GROK_MODEL = os.getenv("GROK_MODEL_NAME", "grok-2-latest")
+# Supported Grok models: "grok-beta", "grok-2-1212", "grok-3", "grok-3-mini"
+GROK_MODEL = os.getenv("GROK_MODEL_NAME", "grok-beta")
 
 SYSTEM_PROMPT = """You are an expert Data Analyst LLM Agent.
 When given a user query:
